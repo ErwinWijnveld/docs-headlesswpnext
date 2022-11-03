@@ -65,14 +65,14 @@ Copy the `.env.local.example` file in this directory to `.env.local` (which will
 cp .env.local.example .env.local
 ```
 
-Then open `.env.local` and set `WORDPRESS_API_URL` and `NEXT_PUBLIC_WORDPRESS_URL` to be the URL to your GraphQL endpoint in WordPress. For example: `https://mywordpressinstallationurl.com/graphql`.
+Then open `.env.local` and set `WORDPRESS_API_URL` and `NEXT_PUBLIC_WORDPRESS_URL` to be the URL to your GraphQL endpoint in WordPress. For example: `https://mybackend.com/graphql`.
 
 Your `.env.local` file should look like this:
 
 ```bash
-WORDPRESS_API_URL=https://mywordpressinstallationurl.com/graphql
+WORDPRESS_API_URL=https://mybackend.com/graphql
 
-NEXT_PUBLIC_WORDPRESS_URL=https://mywordpressinstallationurl.com/graphql
+NEXT_PUBLIC_WORDPRESS_URL=https://mybackend.com/graphql
 NEXT_PUBLIC_FRONTEND_URL=http://localhost:3000
 
 # Only required if you want to enable preview mode

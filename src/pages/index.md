@@ -8,9 +8,9 @@ This is a framework for a headless WordPress site using Next.js. It uses the Wor
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/docs/installation" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Installation" icon="installation" href="/docs/installation" description="Step-by-step guides to setting up your backend system and the framework." /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="Architecture" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
 
 {% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
 
@@ -71,17 +71,7 @@ Your `.env.local` file should look like this:
 
 ```bash
 WORDPRESS_API_URL=https://mybackend.com/graphql
-
 NEXT_PUBLIC_WORDPRESS_URL=https://mybackend.com/graphql
-NEXT_PUBLIC_FRONTEND_URL=http://localhost:3000
-
-# Only required if you want to enable preview mode
-# WORDPRESS_AUTH_REFRESH_TOKEN=
-# WORDPRESS_PREVIEW_SECRET=
-
-# Only required if you want to use google analytics
-# NEXT_PUBLIC_GOOGLE_ANALYTICS=
-
 ```
 
 ### Start developing

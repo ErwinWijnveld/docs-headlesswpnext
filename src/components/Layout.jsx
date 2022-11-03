@@ -21,28 +21,28 @@ const navigation = [
     ],
   },
   {
-    title: 'Core concepts',
+    title: 'Architecture',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
+      { title: 'Custom fields', href: '/docs/understanding-caching' },
       {
-        title: 'Predicting user behavior',
+        title: 'Custom post types',
         href: '/docs/predicting-user-behavior',
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
+      { title: 'Options pages', href: '/docs/basics-of-time-travel' },
+      { title: 'Layout', href: '/docs/the-butterfly-effect' },
       {
-        title: 'Introduction to string theory',
+        title: 'Presets',
         href: '/docs/introduction-to-string-theory',
       },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
     ],
   },
   {
-    title: 'Advanced guides',
+    title: 'Advanced features',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
+      { title: 'Previews', href: '/docs/temporal-paradoxes' },
+      { title: 'Hooks', href: '/docs/neuralink-integration' },
+      { title: 'Gravity forms', href: '/docs/writing-plugins' },
+      { title: 'Yoast SEO', href: '/docs/testing' },
       { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
       {
         title: 'Predictive data generation',

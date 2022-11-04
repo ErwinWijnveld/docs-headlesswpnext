@@ -1,5 +1,10 @@
-import { Fragment } from 'react'
 import Highlight, { defaultProps } from 'prism-react-renderer'
+import Prism from 'prism-react-renderer/prism'
+import { Fragment } from 'react'
+
+;(typeof global !== 'undefined' ? global : window).Prism = Prism
+
+require('prismjs/components/prism-php')
 
 export function Fence({ children, language }) {
   return (

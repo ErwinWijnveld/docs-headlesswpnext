@@ -23,12 +23,12 @@ const navigation = [
   {
     title: 'Architecture',
     links: [
-      { title: 'Custom fields', href: '/docs/understanding-caching' },
       {
         title: 'Custom post types',
-        href: '/docs/predicting-user-behavior',
+        href: '/docs/custom-post-types',
       },
-      { title: 'Options pages', href: '/docs/basics-of-time-travel' },
+      { title: 'Options pages', href: '/docs/options-pages' },
+      { title: 'Custom fields', href: '/docs/understanding-caching' },
       { title: 'Layout', href: '/docs/the-butterfly-effect' },
       {
         title: 'Presets',
@@ -40,9 +40,9 @@ const navigation = [
     title: 'Advanced features',
     links: [
       { title: 'Previews', href: '/docs/temporal-paradoxes' },
+      { title: 'Taxonomies', href: '/docs/testing' },
       { title: 'Hooks', href: '/docs/neuralink-integration' },
       { title: 'Gravity forms', href: '/docs/writing-plugins' },
-      { title: 'Yoast SEO', href: '/docs/testing' },
       { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
       {
         title: 'Predictive data generation',

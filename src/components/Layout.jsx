@@ -28,7 +28,7 @@ const navigation = [
         href: '/docs/custom-post-types',
       },
       { title: 'Options pages', href: '/docs/options-pages' },
-      { title: 'Custom fields', href: '/docs/understanding-caching' },
+      { title: 'Custom fields', href: '/docs/custom-fields' },
       { title: 'Layout', href: '/docs/the-butterfly-effect' },
       {
         title: 'Presets',

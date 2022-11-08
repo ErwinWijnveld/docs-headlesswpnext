@@ -165,3 +165,40 @@ export async function getAllReviewsWithSlug() {
 Then you will retrieve the data for the getStaticProps function:
 
 Look at the `getProjectAndMoreProjects` function in the `src/lib/queries/projects.ts` file for an example of how to retrieve the data for the Project custom post type single page.
+
+## Preset
+
+Create the file in `src/PostTypes`. Copy and paste from below, replace all instances of `Review` plural and singular with `Your post type name` plural and singular.
+
+```php
+<?php
+
+namespace HeadlesswpPluginStarter\PostTypes;
+
+use HeadlesswpPluginStarter\Interfaces\Hookable;
+use HeadlesswpPluginStarter\Interfaces\CustomPostType;
+
+class ReviewPostType implements Hookable, CustomPostType {
+    use PostTypeLabelUtility;
+
+    const KEY = 'review';
+    const GRAPHQL_SINGLE_NAME = 'Review';
+
+    public function register_hooks(): void {
+        add_action( 'init', [ $this, 'register' ] );
+    }
+
+    public function register(): void {
+        register_post_type( self::KEY, [
+          	'labels'              => $this->generate_labels( 'Review', 'Reviews' ),
+			'public'              => true,
+			'menu_icon'           => 'dashicons-portfolio',
+			'supports'            => ['title', 'editor', 'thumbnail', 'excerpt', 'revisions'],
+			'rewrite'             => ['slug' => 'reviews'],
+			'show_in_graphql'     => true,
+			'graphql_single_name' => self::GRAPHQL_SINGLE_NAME,
+			'graphql_plural_name' => 'Reviews',
+        ]);
+    }
+}
+```

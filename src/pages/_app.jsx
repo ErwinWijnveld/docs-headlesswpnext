@@ -1,10 +1,13 @@
-import Head from 'next/head'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
+import Head from 'next/head'
 
 import { Layout } from '@/components/Layout'
 
-import 'focus-visible'
 import '@/styles/tailwind.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import 'focus-visible'
+import { useEffect } from 'react'
 
 function getNodeText(node) {
   let text = ''
@@ -60,6 +63,10 @@ export default function App({ Component, pageProps }) {
   let tableOfContents = pageProps.markdoc?.content
     ? collectHeadings(pageProps.markdoc.content)
     : []
+
+  useEffect(() => {
+    Aos.init({ duration: 800, anchorPlacement: 'top-bottom' })
+  }, [])
 
   return (
     <>

@@ -103,15 +103,27 @@ function Header({ navigation }) {
       <div className="mr-6 flex lg:hidden">
         <MobileNavigation navigation={navigation} />
       </div>
-      <div className="relative flex flex-grow basis-0 items-center">
+      <div
+        data-aos="fade-down"
+        data-aos-delay="1000"
+        className="relative flex flex-grow basis-0 items-center"
+      >
         <Link href="/" aria-label="Home page">
           <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
         </Link>
       </div>
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
+      <div
+        className="-my-5 mr-6 sm:mr-8 md:mr-0"
+        data-aos="fade-down"
+        data-aos-delay="1200"
+      >
         <Search />
       </div>
-      <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
+      <div
+        className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow"
+        data-aos="fade-down"
+        data-aos-delay="1400"
+      >
         <ThemeSelector className="relative z-10" />
         <Link href="https://github.com" className="group" aria-label="GitHub">
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
@@ -192,7 +204,11 @@ export function Layout({ children, title, tableOfContents }) {
 
       {isHomePage && <HeroNew />}
 
-      <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="1000"
+        className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12"
+      >
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
